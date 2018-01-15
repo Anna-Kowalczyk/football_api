@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #eee;
+  box-sizing: border-box;
+  font-family: "Raleway",sans-serif;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  padding: 8px 0;
+}
+
+span {
+  margin: 0 15px 0 2px;
+}
+
+button {
+  font-family: "Raleway",sans-serif;
+  padding: 8px 20px;
+  font-size: 16px;
+  color: #fff;
+  background: rgb(150, 220, 13);
+  border: none;
+  border-radius: 2px;
+  width: 49%;
+  opacity: 1;
+}
+
+button:disabled {
+  opacity: 0.4;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li:hover {
+  background: hsla(0, 0%, 85%, 1);
+  cursor: pointer;
+}
+
+input[type="text"], input[type="password"] {
+  font-family: "Raleway",sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  width: 100%;
+  padding: 8px 20px;
+  border: none;
+  margin: 10px 0px 10px;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+}
+
+/* LOGIN */
+.container.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.container_p {
+  display: block;
+  text-align: center;
+}
+
+form {
+  position: absolute;
+  top: 20px;
+  width: 90%;
+}
+
+@media (min-width: 600px) {
+  form {
+    width: 65%;
+  }
+  #inputInvite {
+    width: 60%;
+  }
+  #dropdownList {
+    width: 70%;
+  }
+}
+
+@media (min-width: 768px) {
+  form {
+    width: 55%;
+  }
+  #inputInvite {
+    width: 60%;
+  }
+  #dropdownList {
+    width: 70%;
+  }
+}
+
+#buttonLogin {
+  margin-top: 50px;
+}
+
+.form-group {
+  margin-top: 25px;
+  padding: 0;
+}
+
+/* CREATE A GAME */
+#inputInvite {
+  font-family: "Raleway",sans-serif;
+  display: inline-block;
+  width: 100%;
+  padding: 8px 20px;
+  border: none;
+  box-sizing: border-box;
+}
+
+#dropdownList {
+  width: 100%;
+  display: none;
+  background: #fff;
+  list-style: none;
+  box-sizing: border-box;
+  z-index: 9999;
+  position: absolute;
+  top: 60px;
+}
+
+#dropdownList li {
+  padding: 8px 20px;
+}
+
+
+#dropdownList.shown {
+  display: inline-block;
+}
+
+.form-group-invite {
+  display: inline-block;
+  width:100%;
+}
+
+#buttonInvite {
+  display: inline-block;
+}
+
+li.hidden {
+  display: none;
+}
+
+/* PLAYERS */
+.img_container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.player_info {
+  display: inline-block;
+  margin-right: 20px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.player_info p {
+  position: absolute;
+  top: 70px;
+}
+
+img {
+  max-width: 100px;
+  max-height: 115px;
+  margin: 20px;
+}
+
+.player {
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  margin: 20px auto;
+  width: 300px;
+  height: 160px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#playersContainer {
+  margin-top: 150px;
+}
+
+.container.left {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.container.top {
+  align-items: flex-start;
+}
+.container.team {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .container.team {
+    width: 50%;
+  }
+}
+
+.container.space-between {
+  justify-content: space-between;
+}
